@@ -63,21 +63,225 @@
           <p class="features__feature-info">Upon request</p>
         </li>
       </ul>
+
       <ul class="projects__available">
         <li class="projects__project">
-          <a href="" class="projects__project-link">Rostov-on-Don, Admiral</a>
-          <a href="" class="projects__project-link">Sochi Thieves</a>
-          <a href="" class="projects__project-link">Rostov-on-Don Patriotic</a>
+          <label for="admiral" class="projects__label">Rostov-on-Don,
+            Admiral</label></li>
+        <li class="projects__project">
+          <label for="thieves" class="projects__label">Sochi Thieves</label>
         </li>
+        <li class="projects__project"><label for="patriotic" class="projects__label">Rostov-on-Don
+            Patriotic</label></li>
       </ul>
+
       <div class="projects__slider slider">
         <img src="" alt="" class="projects__project-photo">
         <img src="" alt="" class="projects__project-photo">
         <img src="" alt="" class="projects__project-photo">
       </div>
+      <div class="projects__controls controls">
+        <button class="controls__btn-left"></button>
+        <fieldset class="projects__available">
+          <input type="radio" name="project" id="admiral" class="projects__project">
+
+          <input type="radio" name="project" id="thieves" class="projects__project">
+
+          <input type="radio" name="project" id="patriotic" class="projects__project">
+
+        </fieldset><button class="controls__btn-right"></button>
+      </div>
+
     </section>
 
+    <section class="control">
+      <h2 class="control__title">online control</h2>
+      <video src="" class="control__video"></video>
+      <p class="control__info">At each facility, a camera is installed that broadcasts the progress of work on the
+        clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch
+        the live broadcast from one of our facilities!
+        Leave a request below and you will receive a link to the broadcast.</p>
+      <form action="" class="control__form">
+        <div class="control__name-box"><label for="name" class="control__label">Name</label><input type="text"
+            class="control__name" placeholder="What is your name:" id="name"></div>
+        <div class="control__phone-box"><label for="tel" class="control__label">Phone</label><input type="text"
+            class="control__name" placeholder="Your phone number:" id="tel"></div>
 
+        <input type="checkbox" name="agree" id="agree" class="control__agree" required>
+        <label for="agree" class="control__agree-lbl">I agree to the processing of personal data</label>
+      </form>
+    </section>
+
+    <section class="types">
+      <h2 class="types__title">Types of repair</h2>
+      <ul class="types__list">
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Redecorating</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Dismantling of old coatings</li>
+            <li class="type__advantage">Wallpapering</li>
+            <li class="type__advantage">Painting walls and ceilings</li>
+            <li class="type__advantage">Laying flooring</li>
+            <li class="type__advantage">Replacing plumbing</li>
+            <li class="type__advantage">Replacing sockets and switches</li>
+            <li class="type__advantage">Replacing doors</li>
+            <span class="type__price">From 900 rub / m2</span>
+          </ul>
+        </li>
+
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Overhaul</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Dismantling of old coatings</li>
+            <li class="type__advantage">Wallpapering</li>
+            <li class="type__advantage">Painting walls and ceilings</li>
+            <li class="type__advantage">Laying flooring</li>
+            <li class="type__advantage">Replacing plumbing</li>
+            <li class="type__advantage">Replacing sockets and switches</li>
+            <li class="type__advantage">Replacing doors</li>
+            <span class="type__price">From 1800 rub / m2</span>
+          </ul>
+        </li>
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Designer Repair</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Dismantling of old coatings</li>
+            <li class="type__advantage">Wallpapering</li>
+            <li class="type__advantage">Painting walls and ceilings</li>
+            <li class="type__advantage">Laying flooring</li>
+            <li class="type__advantage">Replacing plumbing</li>
+            <li class="type__advantage">Replacing sockets and switches</li>
+            <li class="type__advantage">Replacing doors</li>
+            <span class="type__price">from 4000 rub / m2</span>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="workflow">
+      <h2 class="workflow__title"></h2>
+      <ol class="workflow__order">
+        <li class="workflow__move">Our specialist will arrive for measurements per day
+          contact, or appoint a date convenient for you</li>
+        <li class="workflow__move">Free metering</li>
+        <li class="workflow__move">Free consultation</li>
+        <li class="workflow__move">Get a cost estimate and
+          the timing of your future repairs</li>
+      </ol>
+      <form action="" class="workflow__request">
+        <h3 class="workflow__form-title">Leave a request for free
+          departure of the measurer</h3>
+        <div class="workflow__name-box"><label for="name" class="workflow__label">Name</label><input type="text"
+            class="workflow__name" placeholder="What is your name:" id="name"></div>
+        <div class="workflow__phone-box"><label for="tel" class="workflow__label">Phone</label><input type="text"
+            class="workflow__name" placeholder="Your phone number:" id="tel"></div>
+        <div class="workflow__email-box"><label for="email" class="workflow__label">Email</label><input type="text"
+            class="workflow__name" placeholder="Your email:" id="tel"></div>
+
+        <input type="checkbox" name="agree" id="agree" class="control__agree" required>
+        <label for="agree" class="control__agree-lbl">I agree to the processing of personal data</label>
+
+        <button class="workflow__submit-btn primary-btn">Call the measurer</button>
+      </form>
+
+      <p class="workflow__note">Help save 10 - 20% of the
+        cost of materials</p>
+    </section>
+
+    <section class="styles">
+      <h2 class="styles__title">We realize your
+        wildest fantasies</h2>
+      <ul class="styles__list">
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">American classic</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Empire</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Classical</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Loft</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Minimalism</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Provence</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Romanticism</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Scandinavian style</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Mediterranean style</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">High tech</label></li>
+        <li class="styles__item"><input type="radio" name="" id="" class="styles__style-btn"><label for=""
+            class="styles__label">Eclecticism</label></li>
+      </ul>
+
+      <div class="styles__style-photos">
+        <img src="" alt="" class="styles__style-photo">
+        <img src="" alt="" class="styles__style-photo">
+        <img src="" alt="" class="styles__style-photo">
+        <img src="" alt="" class="styles__style-photo">
+      </div>
+    </section>
+
+    <section class="design-project">
+      <h2 class="design-project__title"></h2>
+      <p class="design-project__info"></p>
+
+
+      <ul class="types__list">
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Mini</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Measurement drawing</li>
+            <li class="type__advantage">Redevelopment</li>
+            <li class="type__advantage">Layout of furniture</li>
+            <li class="type__advantage">Plumbing plan. equipment</li>
+            <span class="type__price">150 rub / m2</span>
+          </ul>
+        </li>
+
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Standard</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Measurement drawing</li>
+            <li class="type__advantage">Redevelopment</li>
+            <li class="type__advantage">Layout of furniture</li>
+            <li class="type__advantage">Plan of ceilings</li>
+            <li class="type__advantage">Floor Plan</li>
+            <li class="type__advantage">Electricians plan</li>
+            <li class="type__advantage">Lighting plan</li>
+            <span class="type__price">400 rub / m2</span>
+          </ul>
+        </li>
+        <li class="types__type type">
+          <img src="" alt="" class="type__photo">
+          <h3 class="type__title">Full</h3>
+          <ul class="type__advantages">
+            <li class="type__advantage">Measurement drawing</li>
+            <li class="type__advantage">Redevelopment</li>
+            <li class="type__advantage">Layout of furniture</li>
+            <li class="type__advantage">Plan of ceilings</li>
+            <li class="type__advantage">Floor Plan</li>
+            <li class="type__advantage">Electricians plan</li>
+            <li class="type__advantage">Lighting plan</li>
+            <li class="type__advantage">Wall reamers</li>
+            <li class="type__advantage">3D visualization</li>
+            <li class="type__advantage">Bill of materials</li>
+            <li class="type__advantage">Departure for a selection of materials</li>
+            <li class="type__advantage">Furniture selection</li>
+            <span class="type__price">900 rub / m2</span>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
 
   </main>
 

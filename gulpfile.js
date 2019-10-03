@@ -50,8 +50,8 @@ gulp.task(`sprite`, function () {
 
 gulp.task(`scripts`, () => {
   return gulp.src(`src/js/**/*.js`, {
-    allowEmpty: true
-  })
+      allowEmpty: true
+    })
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(rollup({}, `iife`))
@@ -71,14 +71,14 @@ gulp.task(`copy`, gulp.series(`scripts`, `style`, () => {
   pipe(gulp.dest(`build`));
 }));
 
-gulp.task(`tinypng`, gulp.series(() => {
-  return gulp.src(`./build/img/**/*.{png,jpg,jpeg}`)
+gulp.task(`tinypng`, gulp.series(async () => {
+  return gulp.src(`build/img/**/*.{jpg,png,jpeg,gif}`)
     .pipe(tinypng({
       key: `RsCZev1geyFwOKznstLNGmxugsTZZmG6`,
-      sigFile: `./img/.tinypng-sigs`,
-      log: true
+      // sigFile: `./img/.tinypng-sigs`,
+      // log: true
     }))
-    .pipe(gulp.dest(`./build/img`));
+    .pipe(gulp.dest(`build/img`));
 }));
 
 
@@ -114,7 +114,7 @@ gulp.task(`assemble`, gulp.series(`clean`, `copy`));
 
 // imagemin/tinypng img compression
 
-gulp.task(`build`, gulp.series(`assemble`, `imagemin`, `sprite`));
+gulp.task(`build`, gulp.series(`assemble`, `imagemin`, `tinypng`, `sprite`));
 
 gulp.task(`serve`, gulp.series(`build`, () => {
   server.init({
