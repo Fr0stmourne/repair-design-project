@@ -1,0 +1,17 @@
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  align-content: center;
+  justify-content: space-between;
+
+  &__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary;
+    min-width: 130px;
+  }
+
+  &__call-btn {}
+}

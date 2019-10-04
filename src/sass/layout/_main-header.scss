@@ -1,0 +1,25 @@
+.main-header {
+  background-color: $primary;
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 5.5%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'FuturaDemiC', Arial, sans-serif;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+}

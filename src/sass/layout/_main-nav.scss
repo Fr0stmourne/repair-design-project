@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $neutral;
+
+    &--active {
+      color: $secondary;
+    }
+  }
+
+
+}

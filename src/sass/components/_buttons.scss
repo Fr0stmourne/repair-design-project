@@ -1,0 +1,25 @@
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $secondary;
+  border: 0;
+  border-radius: 3px;
+  color: $neutral;
+}
+
+.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px $neutral solid;
+  border-radius: 3px;
+  color: $neutral;
+}
