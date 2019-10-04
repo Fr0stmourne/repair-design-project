@@ -1,4 +1,8 @@
-@import "normalize.scss";
-@import "fonts.scss";
-@import "variables.scss";
-@import "scaffoldings.scss";
+@import "base/normalize";
+@import "fonts";
+@import "abstracts/variables";
+@import "base/scaffoldings";
+@import "components/buttons";
+@import "layout/main-header";
+@import "layout/main-nav";
+@import "layout/intro";
