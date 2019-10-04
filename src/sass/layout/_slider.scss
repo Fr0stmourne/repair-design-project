@@ -1,0 +1,21 @@
+.slider {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}

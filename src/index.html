@@ -32,7 +32,6 @@
 
   <main>
     <section class="intro">
-
       <div class="container">
         <a href="" class="intro__link--instagram">Instagram</a>
         <div class="intro__wrapper">
@@ -51,59 +50,62 @@
     </section>
 
     <section class="projects">
-      <h2 class="projects__title">Completed projects</h2>
-      <p class="projects__info">Only a small part of the work performed by our company is presented on the site. For 14
-        years on in the construction
-        market we have made happy more than 1000 families</p>
-      <ul class="projects__features features">
-        <li class="features__item">
-          <span class="features__feature-name">City:</span>
-          <p class="features__feature-info">Rostov-on-Don
-            LCD admiral</p>
-        </li>
-        <li class="features__item">
-          <span class="features__feature-name">Apartment area:</span>
-          <p class="features__feature-info">81 m2</p>
-        </li>
-        <li class="features__item">
-          <span class="features__feature-name">Repair time:</span>
-          <p class="features__feature-info">3.5 months</p>
-        </li>
-        <li class="features__item">
-          <span class="features__feature-name">Repair Cost:</span>
-          <p class="features__feature-info">Upon request</p>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="projects__wrapper">
+          <h2 class="projects__title">Completed projects</h2>
+          <p class="projects__info">Only a small part of the work performed by our company is presented on the site. For
+            14
+            years on in the construction
+            market we have made happy more than 1000 families</p>
+          <ul class="projects__features features">
+            <li class="features__item">
+              <span class="features__feature-name">City:</span>
+              <p class="features__feature-info">Rostov-on-Don</p>
+            </li>
+            <li class="features__item">
+              <span class="features__feature-name">Apartment area:</span>
+              <p class="features__feature-info">81 m2</p>
+            </li>
+            <li class="features__item">
+              <span class="features__feature-name">Repair time:</span>
+              <p class="features__feature-info">3.5 months</p>
+            </li>
+            <li class="features__item">
+              <span class="features__feature-name">Repair Cost:</span>
+              <p class="features__feature-info">Upon request</p>
+            </li>
+          </ul>
 
-      <ul class="projects__available">
-        <li class="projects__project">
-          <label for="admiral" class="projects__label">Rostov-on-Don,
-            Admiral</label></li>
-        <li class="projects__project">
-          <label for="thieves" class="projects__label">Sochi Thieves</label>
-        </li>
-        <li class="projects__project"><label for="patriotic" class="projects__label">Rostov-on-Don
-            Patriotic</label></li>
-      </ul>
+          <div class="projects__controls controls">
+            <button class="controls__btn controls__btn--left"></button>
+            <fieldset class="projects__available">
+              <input type="radio" name="project" id="admiral" class="projects__project">
+              <input type="radio" name="project" id="thieves" class="projects__project">
+              <input type="radio" name="project" id="patriotic" class="projects__project">
+            </fieldset>
+            <button class="controls__btn controls__btn--right"></button>
+          </div>
+        </div>
+        <ul class="projects__list">
+          <li class="projects__project">
+            <label for="admiral" class="projects__label projects__label--active">Rostov-on-Don,
+              Admiral</label></li>
+          <li class="projects__project">
+            <label for="thieves" class="projects__label">Sochi Thieves</label>
+          </li>
+          <li class="projects__project"><label for="patriotic" class="projects__label">Rostov-on-Don
+              Patriotic</label></li>
+        </ul>
 
-      <div class="projects__slider slider">
-        <img src="" alt="" class="projects__project-photo">
-        <img src="" alt="" class="projects__project-photo">
-        <img src="" alt="" class="projects__project-photo">
+        <div class="projects__slider slider">
+          <button class="slider__btn slider__btn--left"></button>
+          <img src="img/projects1.jpg" alt="Project 1" class="projects__project-photo">
+          <img src="img/projects2.jpg" alt="Project 2" class="projects__project-photo">
+          <img src="" alt="" class="projects__project-photo">
+          <button class="slider__btn slider__btn--right"></button>
+        </div>
+
       </div>
-      <div class="projects__controls controls">
-        <button class="controls__btn-left"></button>
-        <fieldset class="projects__available">
-          <input type="radio" name="project" id="admiral" class="projects__project">
-
-          <input type="radio" name="project" id="thieves" class="projects__project">
-
-          <input type="radio" name="project" id="patriotic" class="projects__project">
-
-        </fieldset>
-        <button class="controls__btn-right"></button>
-      </div>
-
     </section>
 
     <section class="control">

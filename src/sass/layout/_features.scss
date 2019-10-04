@@ -1,0 +1,21 @@
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 85px;
+  color: $neutral;
+
+  &__feature-name {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $secondary;
+    margin-bottom: 10px;
+  }
+
+  &__feature-info {
+    align-self: end;
+    margin: 0;
+  }
+}
