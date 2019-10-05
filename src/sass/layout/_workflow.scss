@@ -1,0 +1,45 @@
+.workflow {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 50px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 10% 0 0;
+  }
+
+  &__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 650px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20%;
+    list-style: none;
+    background-image: url(../img/workflow.png);
+    background-size: cover;
+  }
+
+  &__move {
+    padding-bottom: 80px;
+  }
+
+  &__request {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $primary;
+    height: 80%;
+    color: $neutral;
+  }
+
+  &__note {
+    grid-column: 2 / 3;
+  }
+
+}
