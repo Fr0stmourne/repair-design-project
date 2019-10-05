@@ -1,0 +1,58 @@
+.steps {
+  background-color: $primary;
+  color: $neutral;
+
+  .container {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: min-content, min-content;
+    grid-column-gap: 10%;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 5%;
+
+  }
+
+  &__heading {
+    color: $secondary;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px 50px;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  &__step {
+    &-img {
+      width: 100%;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      color: $secondary;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
