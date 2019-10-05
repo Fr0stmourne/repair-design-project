@@ -1,0 +1,23 @@
+.types {
+
+  .container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 5%;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+}

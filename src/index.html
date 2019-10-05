@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Conquest</title>
+  <title>Repair Design</title>
   <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 
@@ -79,9 +79,9 @@
           <div class="projects__controls controls">
             <button class="controls__btn controls__btn--left"></button>
             <fieldset class="projects__available">
-              <input type="radio" name="project" id="admiral" class="projects__project">
-              <input type="radio" name="project" id="thieves" class="projects__project">
-              <input type="radio" name="project" id="patriotic" class="projects__project">
+              <input type="radio" name="project" id="admiral" class="projects__project-radio" checked>
+              <input type="radio" name="project" id="thieves" class="projects__project-radio">
+              <input type="radio" name="project" id="patriotic" class="projects__project-radio">
             </fieldset>
             <button class="controls__btn controls__btn--right"></button>
           </div>
@@ -109,71 +109,94 @@
     </section>
 
     <section class="control">
-      <h2 class="control__title">online control</h2>
-      <video src="" class="control__video"></video>
-      <p class="control__info">At each facility, a camera is installed that broadcasts the progress of work on the
-        clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch
-        the live broadcast from one of our facilities!
-        Leave a request below and you will receive a link to the broadcast.</p>
-      <form action="" class="control__form">
-        <div class="control__name-box"><label for="name" class="control__label">Name</label><input type="text"
-            class="control__name" placeholder="What is your name:" id="name"></div>
-        <div class="control__phone-box"><label for="tel" class="control__label">Phone</label><input type="text"
-            class="control__name" placeholder="Your phone number:" id="tel"></div>
+      <div class="container">
+        <h2 class="control__title">Online control</h2>
+        <div class="control__video-block video">
+          <button class="video__play-btn"><span class="visually-hidden">Play</span></button>
+          <video src="" poster="img/poster.jpg" class="control__video video__video"></video>
+        </div>
+        <p class="control__info">At each facility, a camera is installed that broadcasts the progress of work on the
+          clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can
+          watch
+          the live broadcast from one of our facilities!
+          Leave a request below and you will receive a link to the broadcast.</p>
+      </div>
+    </section>
 
-        <input type="checkbox" name="agree" id="agree" class="control__agree" required>
-        <label for="agree" class="control__agree-lbl">I agree to the processing of personal data</label>
-      </form>
+    <section class="request">
+      <div class="container">
+        <h2 class="request__title visually-hidden">Request form</h2>
+        <form action="" class="request__form">
+          <div class="request__name-box"><label for="name" class="request__label">Name</label><input type="text"
+              class="request__name" placeholder="What is your name:" id="name"></div>
+          <div class="request__phone-box"><label for="tel" class="request__label">Phone</label><input type="tel"
+              class="request__name" placeholder="Your phone number:" id="tel"></div>
+          <button class="btn-primary request__submit-btn">Submit</button>
+          <div class="request__agree-box"><input type="checkbox" name="agree" id="agree" class="request__agree"
+              required>
+            <label for="agree" class="request__agree-lbl">I agree to the processing of personal data</label></div>
+        </form>
+      </div>
     </section>
 
     <section class="types">
-      <h2 class="types__title">Types of repair</h2>
-      <ul class="types__list">
-        <li class="types__type type">
-          <img src="" alt="" class="type__photo">
-          <h3 class="type__title">Redecorating</h3>
-          <ul class="type__advantages">
-            <li class="type__advantage">Dismantling of old coatings</li>
-            <li class="type__advantage">Wallpapering</li>
-            <li class="type__advantage">Painting walls and ceilings</li>
-            <li class="type__advantage">Laying flooring</li>
-            <li class="type__advantage">Replacing plumbing</li>
-            <li class="type__advantage">Replacing sockets and switches</li>
-            <li class="type__advantage">Replacing doors</li>
-            <span class="type__price">From 900 rub / m2</span>
-          </ul>
-        </li>
+      <div class="container">
+        <h2 class="types__title">Types of repair</h2>
+        <ul class="types__list">
+          <li class="types__type type">
+            <img src="img/type1.jpg" alt="" class="type__photo">
 
-        <li class="types__type type">
-          <img src="" alt="" class="type__photo">
-          <h3 class="type__title">Overhaul</h3>
-          <ul class="type__advantages">
-            <li class="type__advantage">Dismantling of old coatings</li>
-            <li class="type__advantage">Wallpapering</li>
-            <li class="type__advantage">Painting walls and ceilings</li>
-            <li class="type__advantage">Laying flooring</li>
-            <li class="type__advantage">Replacing plumbing</li>
-            <li class="type__advantage">Replacing sockets and switches</li>
-            <li class="type__advantage">Replacing doors</li>
-            <span class="type__price">From 1800 rub / m2</span>
-          </ul>
-        </li>
-        <li class="types__type type">
-          <img src="" alt="" class="type__photo">
-          <h3 class="type__title">Designer Repair</h3>
-          <ul class="type__advantages">
-            <li class="type__advantage">Dismantling of old coatings</li>
-            <li class="type__advantage">Wallpapering</li>
-            <li class="type__advantage">Painting walls and ceilings</li>
-            <li class="type__advantage">Laying flooring</li>
-            <li class="type__advantage">Replacing plumbing</li>
-            <li class="type__advantage">Replacing sockets and switches</li>
-            <li class="type__advantage">Replacing doors</li>
-            <span class="type__price">from 4000 rub / m2</span>
-          </ul>
-        </li>
-      </ul>
+            <div class="type__card">
+              <h3 class="type__title">Redecorating</h3>
+              <ul class="type__advantages">
+                <li class="type__advantage">Dismantling of old coatings</li>
+                <li class="type__advantage">Wallpapering</li>
+                <li class="type__advantage">Painting walls and ceilings</li>
+                <li class="type__advantage">Laying flooring</li>
+                <li class="type__advantage">Replacing plumbing</li>
+                <li class="type__advantage">Replacing sockets and switches</li>
+                <li class="type__advantage">Replacing doors</li>
+                <span class="type__price">From 900 rub / m2</span>
+              </ul>
+            </div>
+          </li>
 
+          <li class="types__type type">
+            <img src="img/type2.jpg" alt="" class="type__photo">
+
+            <div class="type__card">
+              <h3 class="type__title">Overhaul</h3>
+              <ul class="type__advantages">
+                <li class="type__advantage">Dismantling of old coatings</li>
+                <li class="type__advantage">Wallpapering</li>
+                <li class="type__advantage">Painting walls and ceilings</li>
+                <li class="type__advantage">Laying flooring</li>
+                <li class="type__advantage">Replacing plumbing</li>
+                <li class="type__advantage">Replacing sockets and switches</li>
+                <li class="type__advantage">Replacing doors</li>
+                <span class="type__price">From 1800 rub / m2</span>
+              </ul>
+            </div>
+          </li>
+          <li class="types__type type">
+            <img src="img/type3.jpg" alt="" class="type__photo">
+
+            <div class="type__card">
+              <h3 class="type__title">Designer Repair</h3>
+              <ul class="type__advantages">
+                <li class="type__advantage">Dismantling of old coatings</li>
+                <li class="type__advantage">Wallpapering</li>
+                <li class="type__advantage">Painting walls and ceilings</li>
+                <li class="type__advantage">Laying flooring</li>
+                <li class="type__advantage">Replacing plumbing</li>
+                <li class="type__advantage">Replacing sockets and switches</li>
+                <li class="type__advantage">Replacing doors</li>
+                <span class="type__price">from 4000 rub / m2</span>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="workflow">
@@ -196,8 +219,8 @@
         <div class="workflow__email-box"><label for="email" class="workflow__label">Email</label><input type="text"
             class="workflow__name" placeholder="Your email:" id="tel"></div>
 
-        <input type="checkbox" name="agree" id="agree" class="control__agree" required>
-        <label for="agree" class="control__agree-lbl">I agree to the processing of personal data</label>
+        <input type="checkbox" name="agree" id="agree" class="workflow__agree" required>
+        <label for="agree" class="workflow__agree-lbl">I agree to the processing of personal data</label>
 
         <button class="workflow__submit-btn btn-primary">Call the measurer</button>
       </form>

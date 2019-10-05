@@ -1,0 +1,29 @@
+.request {
+  .container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 15%;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 33px;
+  }
+
+  &__agree-box {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1 / span 3;
+  }
+
+  &__name-box,
+  &__phone-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

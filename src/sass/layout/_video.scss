@@ -1,0 +1,26 @@
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 817px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  &__video {
+    width: 100%;
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $secondary;
+  }
+}
