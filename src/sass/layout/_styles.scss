@@ -1,0 +1,52 @@
+.styles {
+  background-color: $primary;
+  background-image: url(../img/styles.jpg);
+  background-size: cover;
+  color: $neutral;
+  min-height: 60%;
+
+  .container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5% 5.5%;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 45% 50%;
+  }
+
+  &__title {
+    max-width: 300px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+
+  &__list {
+    display: flex;
+    min-height: 500px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__item {
+    &--active {
+      color: $secondary;
+    }
+  }
+
+  &__style-photos {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-column-gap: 45px;
+  }
+
+  &__style-photo {
+    width: 100%;
+  }
+}
