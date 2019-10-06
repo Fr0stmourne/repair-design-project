@@ -4,7 +4,6 @@
   .container {
     position: relative;
     display: grid;
-    // grid-template-columns: 35% 60%;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
 
@@ -41,11 +40,26 @@
   }
 
   &__title {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 300px;
     margin: 0;
+    padding-right: 100px;
     font-family: 'Yeseva One', Arial, serif;
     font-size: 27px;
+    line-height: 1.38;
     color: $secondary;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 2px;
+      background-color: $secondary;
+      bottom: 18px;
+      right: 15px;
+    }
 
     @media (max-width: $tablet-width) {
       text-align: center;
@@ -64,7 +78,7 @@
   }
 
   &__list {
-    margin-right: 20%;
+    margin-right: 16%;
     display: flex;
     width: 50%;
     max-width: 625px;
@@ -85,8 +99,18 @@
   }
 
   &__label {
+    font-size: 14px;
+    font-family: 'Yeseva One', Arial, serif;
+    padding-bottom: 5px;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
     opacity: 0.3;
+
+    &--active {
+      opacity: 1;
+      border-bottom: 1px solid $secondary;
+      color: $secondary;
+    }
   }
 
   &__features {
@@ -105,9 +129,14 @@
     }
   }
 
-  &__label--active {
-    opacity: 1;
-    color: $secondary;
+  &__fieldset {
+    div {
+      display: flex;
+    }
+
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
 
   &__slider {
@@ -127,6 +156,11 @@
 
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      max-width: none;
     }
   }
 

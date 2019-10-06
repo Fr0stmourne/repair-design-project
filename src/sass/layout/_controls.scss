@@ -1,4 +1,43 @@
 .controls {
   display: flex;
 
+  &> :not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__btn {
+    width: 40px;
+    background-color: transparent;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    &--left {
+      background-image: url(../img/arrow-left.svg);
+    }
+
+    &--right {
+      background-image: url(../img/arrow-right.svg);
+    }
+  }
+
+  &__radio {
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $neutral;
+    opacity: 0.3;
+
+    &:checked {
+      opacity: 1;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
 }

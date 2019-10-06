@@ -48,6 +48,7 @@
 
 
   .container {
+    position: relative;
     display: flex;
     box-sizing: border-box;
     max-width: $desktop-width;
@@ -60,6 +61,7 @@
     width: 60%;
     margin: 0;
     font-size: 40px;
+    line-height: 1.32;
     font-family: "Yeseva One", Arial, serif;
     text-transform: uppercase;
     color: $neutral;
@@ -82,6 +84,7 @@
     font-family: 'FuturaBookC', Arial, sans-serif;
     font-weight: 400;
     font-size: 22px;
+    line-height: 1.35;
     color: $neutral;
 
     @media (max-width: $tablet-width) {
@@ -97,6 +100,10 @@
       writing-mode: vertical-lr;
       padding: 0 38px;
       text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "FuturaDemiC", Arial, sans-serif;
 
       @media (max-width: $tablet-width) {
         display: none;
@@ -105,16 +112,19 @@
   }
 
   &__scroll {
+    position: absolute;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 17%;
     height: 100px;
     left: 0;
     bottom: 0;
     transform: translateY(50%);
     background-color: $primary;
+    font-size: 14px;
+    font-family: 'Yeseva One', Arial, serif;
 
     @media (max-width: $tablet-width) {
       display: none;

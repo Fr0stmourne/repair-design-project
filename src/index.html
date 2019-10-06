@@ -27,7 +27,7 @@
       <div class="main-header__contacts contacts">
         <a href="tel:+79287683239" class="contacts__tel">+7 (928)
           768-32-39</a>
-        <button class="main-header__call-btn btn-primary">Request a call</button>
+        <button class="btn btn--primary contacts__call-btn">Request a call</button>
       </div>
     </div>
   </header>
@@ -35,7 +35,7 @@
   <main>
     <section class="intro">
       <div class="container">
-        <a href="" class="intro__link--instagram">Instagram</a>
+        <a href="" class="intro__link intro__link--instagram">Instagram</a>
         <div class="intro__wrapper">
           <h2 class="intro__title">Turnkey Repair in the
             city of <span class="intro__special">Rostov-on-Don</span></h2>
@@ -43,11 +43,11 @@
             with work time saving up to 45 days and 20% from
             cost of materials due to the organization of work</p>
           <div class="intro__btn-wrapper">
-            <button class="btn-primary intro__calculate-btn">Calculate the cost</button>
-            <button class="btn-secondary intro__submit-btn">Submit your application</button>
+            <button class="btn btn--primary intro__calculate-btn">Calculate the cost</button>
+            <button class="btn btn--secondary intro__submit-btn">Submit your application</button>
           </div>
-          <div class="intro__scroll"><a href="" class="intro__scroll-btn">Scroll down</a></div>
         </div>
+        <div class="intro__scroll"><a href="" class="intro__scroll-btn">Scroll down</a></div>
       </div>
     </section>
 
@@ -62,7 +62,7 @@
           <ul class="projects__features features">
             <li class="features__item">
               <span class="features__feature-name">City:</span>
-              <p class="features__feature-info">Rostov-on-Don</p>
+              <p class="features__feature-info">Rostov-on-Don LCD admiral</p>
             </li>
             <li class="features__item">
               <span class="features__feature-name">Apartment area:</span>
@@ -80,10 +80,13 @@
 
           <div class="projects__controls controls">
             <button class="controls__btn controls__btn--left"></button>
-            <fieldset class="projects__available">
-              <input type="radio" name="project" id="admiral" class="projects__project-radio" checked>
-              <input type="radio" name="project" id="thieves" class="projects__project-radio">
-              <input type="radio" name="project" id="patriotic" class="projects__project-radio">
+            <fieldset class="projects__fieldset">
+              <!-- had to use an extra div to avoid fieldset flex bug -->
+              <div>
+                <input type="radio" name="project" id="admiral" class="projects__project-radio controls__radio" checked>
+                <input type="radio" name="project" id="thieves" class="projects__project-radio controls__radio">
+                <input type="radio" name="project" id="patriotic" class="projects__project-radio controls__radio">
+              </div>
             </fieldset>
             <button class="controls__btn controls__btn--right"></button>
           </div>
@@ -134,7 +137,7 @@
               class="request__name" placeholder="What is your name:" id="name"></div>
           <div class="request__phone-box"><label for="tel" class="request__label">Phone</label><input type="tel"
               class="request__name" placeholder="Your phone number:" id="tel"></div>
-          <button class="btn-primary request__submit-btn">Submit</button>
+          <button class="btn btn--primary request__submit-btn">Submit</button>
           <div class="request__agree-box"><input type="checkbox" name="agree" id="agree" class="request__agree"
               required>
             <label for="agree" class="request__agree-lbl">I agree to the processing of personal data</label></div>
@@ -148,7 +151,6 @@
         <ul class="types__list">
           <li class="types__type type">
             <img src="img/type1.jpg" alt="" class="type__photo">
-
             <div class="type__card">
               <h3 class="type__title">Redecorating</h3>
               <ul class="type__advantages">
@@ -159,14 +161,13 @@
                 <li class="type__advantage">Replacing plumbing</li>
                 <li class="type__advantage">Replacing sockets and switches</li>
                 <li class="type__advantage">Replacing doors</li>
-                <span class="type__price">From 900 rub / m2</span>
               </ul>
+              <span class="type__price">From 900 rub / m2</span>
             </div>
           </li>
 
           <li class="types__type type">
             <img src="img/type2.jpg" alt="" class="type__photo">
-
             <div class="type__card">
               <h3 class="type__title">Overhaul</h3>
               <ul class="type__advantages">
@@ -177,13 +178,12 @@
                 <li class="type__advantage">Replacing plumbing</li>
                 <li class="type__advantage">Replacing sockets and switches</li>
                 <li class="type__advantage">Replacing doors</li>
-                <span class="type__price">From 1800 rub / m2</span>
               </ul>
+              <span class="type__price">From 1800 rub / m2</span>
             </div>
           </li>
           <li class="types__type type">
             <img src="img/type3.jpg" alt="" class="type__photo">
-
             <div class="type__card">
               <h3 class="type__title">Designer Repair</h3>
               <ul class="type__advantages">
@@ -194,8 +194,8 @@
                 <li class="type__advantage">Replacing plumbing</li>
                 <li class="type__advantage">Replacing sockets and switches</li>
                 <li class="type__advantage">Replacing doors</li>
-                <span class="type__price">from 4000 rub / m2</span>
               </ul>
+              <span class="type__price">from 4000 rub / m2</span>
             </div>
           </li>
         </ul>
@@ -225,7 +225,7 @@
           <div class="workflow__agree-box"><input type="checkbox" name="agree" id="agree-1" class="workflow__agree"
               required>
             <label for="agree-1" class="workflow__agree-lbl">I agree to the processing of personal data</label></div>
-          <button class="workflow__submit-btn btn-primary">Call the measurer</button>
+          <button class="workflow__submit-btn btn btn--primary">Call the measurer</button>
         </form>
 
         <p class="workflow__note">Help save 10 - 20% of the
@@ -299,8 +299,8 @@
                 <li class="type__advantage">Redevelopment</li>
                 <li class="type__advantage">Layout of furniture</li>
                 <li class="type__advantage">Plumbing plan. equipment</li>
-                <span class="type__price">150 rub / m2</span>
               </ul>
+              <span class="type__price">150 rub / m2</span>
             </div>
 
           </li>
@@ -317,8 +317,8 @@
                 <li class="type__advantage">Floor Plan</li>
                 <li class="type__advantage">Electricians plan</li>
                 <li class="type__advantage">Lighting plan</li>
-                <span class="type__price">400 rub / m2</span>
               </ul>
+              <span class="type__price">400 rub / m2</span>
             </div>
           </li>
           <li class="types__type type">
@@ -338,8 +338,8 @@
                 <li class="type__advantage">Bill of materials</li>
                 <li class="type__advantage">Departure for a selection of materials</li>
                 <li class="type__advantage">Furniture selection</li>
-                <span class="type__price">900 rub / m2</span>
               </ul>
+              <span class="type__price">900 rub / m2</span>
             </div>
           </li>
         </ul>
@@ -517,7 +517,7 @@
                 <input type="checkbox" name="agree" id="agree" class="main-form__agree-checkbox" required>
                 <label for="agree" class="main-form__agree-lbl">I agree to the processing of personal data</label>
               </div>
-              <button class="btn-primary main-form__submit-btn">Submit</button>
+              <button class="btn btn--primary main-form__submit-btn">Submit</button>
             </form>
           </div>
 
@@ -562,7 +562,7 @@
       <div class="main-footer__contacts contacts">
         <a href="tel:+79287683239" class="contacts__tel">+7 (928)
           768-32-39</a>
-        <button class="main-header__call-btn btn-primary">Request a call</button>
+        <button class="main-header__call-btn btn btn--primary">Request a call</button>
       </div>
     </div>
   </footer>

@@ -15,10 +15,16 @@
     text-transform: uppercase;
     color: $secondary;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Yeseva One', Arial, serif;
   }
 
   &__feature-info {
+    max-width: 100px;
     align-self: end;
     margin: 0;
+    font-family: 'FuturaBookC', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.35;
   }
 }

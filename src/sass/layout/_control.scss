@@ -20,6 +20,8 @@
     text-align: center;
     text-transform: uppercase;
     color: $neutral;
+    font-family: 'Yeseva One', Arial, serif;
+    font-size: 20px;
   }
 
   &__info {
@@ -27,6 +29,9 @@
     margin: 0 auto;
     padding: 0 25px;
     text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: 'FuturaBookC', Arial, sans-serif;
 
     @media (max-width: $tablet-width) {
       padding: 0;

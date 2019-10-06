@@ -8,7 +8,7 @@
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5% 5.5%;
+    padding: 1.5% 90px;
 
     @media (max-width: $tablet-width) {
       padding: 20px 6%;
@@ -30,12 +30,6 @@
     @media (max-width: $tablet-width) {
       display: none;
       padding: 23px 18px;
-    }
-  }
-
-  &__call-btn {
-    @media (max-width: $tablet-width) {
-      display: none;
     }
   }
 }

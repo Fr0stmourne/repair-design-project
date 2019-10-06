@@ -4,6 +4,8 @@
   grid-column-gap: 20px;
   align-content: center;
   justify-content: space-between;
+  font-family: 'FuturaDemiC', Arial, sans-serif;
+  font-size: 14px;
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -17,5 +19,11 @@
     min-width: 130px;
   }
 
-  &__call-btn {}
+  &__call-btn {
+    font-size: 13px;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

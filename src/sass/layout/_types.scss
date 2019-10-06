@@ -1,4 +1,7 @@
 .types {
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: 'FuturaBookC', Arial, sans-serif;
 
   .container {
     box-sizing: border-box;
@@ -11,6 +14,9 @@
   &__title {
     text-align: center;
     text-transform: uppercase;
+    font-family: "Yeseva One", Arial, serif;
+    font-size: 20px;
+    line-height: 1.38;
 
     @media (max-width: $tablet-width) {
       padding-bottom: 45px;
@@ -18,11 +24,10 @@
   }
 
   &__list {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
     color: $primary;
   }
 

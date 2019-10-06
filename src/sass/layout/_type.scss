@@ -2,6 +2,9 @@
   position: relative;
   min-height: 400px;
   max-width: 390px;
+  width: 100%;
+  justify-self: center;
+
 
   &__photo {
     position: absolute;
@@ -18,36 +21,51 @@
 
     @media (max-width: $tablet-width) {
       padding-bottom: 50px;
+
     }
   }
 
   &__card {
     position: relative;
-    margin: 0 30px;
-    margin-top: 80%;
+    margin: 80% 30px 0;
+    padding: 30px 0 35px 35px;
     background-color: $neutral;
     box-shadow: $card-shadow;
 
     @media (max-width: $tablet-width) {
-      margin-left: 0;
       padding-left: 30px;
+      margin-left: 0;
+      margin-right: 60px;
       margin-bottom: 60px;
     }
   }
 
   &__title {
-    text-align: center;
+    font-family: "Yeseva One", Arial, serif;
+    font-size: 18px;
+    line-height: 1.38;
+
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+    }
   }
 
   &__price {
-    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
     padding: 20px 18px;
     background-color: $secondary;
+    text-transform: uppercase;
+    font-family: "Yeseva One", Arial, serif;
+
 
     @media (max-width: $tablet-width) {
       position: absolute;
       bottom: 0;
-      left: -30px;
+      left: 0;
       transform: translateY(50%);
     }
   }

@@ -18,5 +18,8 @@
     border-radius: 50%;
     border: 0;
     background-color: $secondary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/play-btn.svg);
   }
 }

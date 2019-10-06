@@ -4,19 +4,36 @@
 
   &__btn {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     top: 0;
     bottom: 0;
     margin: auto 0;
+    border: 0;
+    cursor: pointer;
+    background-color: $secondary;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: $tablet-width) {
+      width: 30px;
+      height: 30px;
+    }
 
     &--left {
-      left: 0;
+      left: 15px;
+      background-image: url(../img/btn-arrow--left.svg);
+      display: none;
+
+      @media (max-width: $tablet-width) {
+        display: block;
+      }
     }
 
     &--right {
-      right: 0;
+      right: 15px;
+      background-image: url(../img/btn-arrow--right.svg);
     }
   }
 }

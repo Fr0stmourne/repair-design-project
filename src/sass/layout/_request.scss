@@ -23,6 +23,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5%;
     grid-row-gap: 33px;
+    font-family: 'FuturaBookC', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.35;
 
     @media (max-width: $tablet-width) {
       display: flex;
@@ -30,10 +33,16 @@
     }
   }
 
+  &__label {
+    font-size: 15px;
+    color: rgba($light-primary, 0.5);
+  }
+
   &__agree-box {
     align-self: center;
     justify-self: center;
     grid-column: 1 / span 3;
+    font-size: 16px;
 
     @media (max-width: $tablet-width) {
       margin-bottom: 60px;
@@ -44,6 +53,12 @@
   &__phone-box {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid rgba($light-primary, 0.3);
+  }
+
+  & input {
+    border: 0;
+    padding: 8px 10px;
   }
 
   &__name-box {
