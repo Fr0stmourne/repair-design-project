@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 20px;
   padding: 20px;
-  box-shadow: 0 0 5px 1px rgba($primary, 0.3);
+  box-shadow: $card-shadow;
 
   &__photo {
     border-radius: 50%;

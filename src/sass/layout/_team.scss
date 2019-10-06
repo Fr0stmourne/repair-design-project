@@ -2,13 +2,17 @@
 
   background-image: linear-gradient(to bottom, $primary 0%, $primary 55%, $neutral 55%);
 
-  .container {
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    background-color: $primary;
+  }
 
+  .container {
     box-sizing: border-box;
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5% 200px;
+    padding: 1.5% 13%;
   }
 
   &__title {
@@ -29,15 +33,26 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-column-gap: 10%;
+    grid-row-gap: 55px;
     margin-bottom: 65px;
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    }
+
   }
 
   &__description {
     max-width: 560px;
     margin: 0 auto;
     text-align: center;
+
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 
 }

@@ -1,6 +1,12 @@
 .design-project {
-
+  color: $primary;
   background-image: linear-gradient(to bottom, $neutral 0%, $neutral 55%, $primary 55%);
+
+  @media (max-width: $tablet-width) {
+    color: $neutral;
+    background-image: none;
+    background-color: $primary;
+  }
 
   .container {
     box-sizing: border-box;
@@ -14,7 +20,6 @@
   &__title {
     text-align: center;
     text-transform: uppercase;
-    color: $neutral;
   }
 
   &__info {
@@ -22,6 +27,9 @@
     margin-bottom: 40px;
     max-width: 50%;
     text-align: center;
-    color: $neutral;
+
+    @media (max-width: $tablet-width) {
+      max-width: none;
+    }
   }
 }

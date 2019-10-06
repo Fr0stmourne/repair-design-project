@@ -2,19 +2,35 @@
   background-color: lighten($primary, 10%);
   padding-bottom: 65px;
 
+  @media (max-width: $tablet-width) {
+    background-color: $primary;
+    padding-bottom: 0;
+  }
+
   .wrapper {
     position: relative;
     box-sizing: border-box;
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 300px 5% 100px;
+    padding: 300px 5% 0;
+
+    @media (max-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 5% 0;
+    }
   }
 
   &__map {
     margin: 0 auto;
     width: 65%;
     max-width: 925px;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      max-width: none;
+    }
 
     img {
       width: 100%;
@@ -26,8 +42,14 @@
     width: 42%;
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 50px;
     color: $secondary;
     text-transform: uppercase;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      order: 1;
+    }
   }
 
   &__address,

@@ -1,4 +1,8 @@
 .workflow {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 3fr 2fr;

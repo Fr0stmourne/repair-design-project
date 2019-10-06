@@ -5,6 +5,10 @@
   color: $neutral;
   min-height: 60%;
 
+  @media (max-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $neutral 0%, $neutral 55%, $primary 55%);
+  }
+
   .container {
     box-sizing: border-box;
     max-width: $desktop-width;
@@ -16,6 +20,11 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 45% 50%;
+
+    @media (max-width: $tablet-width) {
+      display: flex;
+      overflow: hidden;
+    }
   }
 
   &__title {
@@ -30,6 +39,11 @@
     min-height: 500px;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+
   }
 
   &__item {
@@ -44,9 +58,65 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, min-content);
     grid-column-gap: 45px;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      overflow: hidden;
+    }
+
+  }
+
+  &__photo-wrapper {
+    @media (max-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background-color: $secondary;
+
+    }
+
+    &--left {
+      left: 14px;
+    }
+
+    &--right {
+      right: 14px;
+    }
+
+  }
+
+  &__style-photos {
+    position: relative;
+    width: 100%;
+  }
+
+  & picture {
+    width: 100%;
   }
 
   &__style-photo {
     width: 100%;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+
+      picture & {
+        display: block;
+      }
+    }
   }
 }

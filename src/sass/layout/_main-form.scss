@@ -12,10 +12,23 @@
   background-color: $primary;
   color: $neutral;
 
+  @media (max-width: $tablet-width) {
+    position: static;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin-bottom: 45px;
+    transform: none;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
+  }
 
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
   }
 
   &__wrapper {
@@ -23,6 +36,11 @@
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-column-gap: 55px;
     justify-content: space-between;
+
+    @media (max-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
 
   }
 
@@ -35,11 +53,21 @@
   &__agree {
     text-align: center;
     margin-bottom: 45px;
+
+    @media (max-width: $tablet-width) {
+      text-align: left;
+    }
   }
 
   &__submit-btn {
     margin: 0 auto 35px;
     width: 25%;
     max-width: 200px;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
   }
 }

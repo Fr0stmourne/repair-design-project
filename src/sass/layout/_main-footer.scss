@@ -1,6 +1,10 @@
 .main-footer {
   background-color: $primary;
 
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;

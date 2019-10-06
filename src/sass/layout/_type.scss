@@ -13,11 +13,26 @@
     max-width: 390px;
   }
 
+  &__advantages {
+    position: relative;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 50px;
+    }
+  }
+
   &__card {
     position: relative;
     margin: 0 30px;
     margin-top: 80%;
     background-color: $neutral;
+    box-shadow: $card-shadow;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+      padding-left: 30px;
+      margin-bottom: 60px;
+    }
   }
 
   &__title {
@@ -29,5 +44,11 @@
     padding: 20px 18px;
     background-color: $secondary;
 
+    @media (max-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      transform: translateY(50%);
+    }
   }
 }

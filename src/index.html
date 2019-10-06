@@ -264,16 +264,19 @@
           </ul>
 
           <div class="styles__style-photos">
+            <button class="styles__btn styles__btn--left"></button>
             <div class="styles__photo-wrapper">
-              <img src="../img/styles1.jpg" alt="" class="styles__style-photo">
+              <picture>
+                <source media="(max-width: 768px)" srcset="../img/styles1mobile.jpg" class="styles__style-photo">
+                <img src="../img/styles1.jpg" alt="" class="styles__style-photo">
+              </picture>
               <img src="../img/styles2.jpg" alt="" class="styles__style-photo">
             </div>
             <div class="styles__photo-wrapper">
               <img src="../img/styles3.jpg" alt="" class="styles__style-photo">
               <img src="../img/styles4.jpg" alt="" class="styles__style-photo">
             </div>
-
-
+            <button class="styles__btn styles__btn--right"></button>
           </div>
         </div>
       </div>
@@ -511,7 +514,7 @@
                 <input type="text" class="main-form__input" placeholder="I want to know:">
               </div>
               <div class="main-form__agree">
-                <input type="checkbox" name="agree" id="agree" class="main-form__agree" required>
+                <input type="checkbox" name="agree" id="agree" class="main-form__agree-checkbox" required>
                 <label for="agree" class="main-form__agree-lbl">I agree to the processing of personal data</label>
               </div>
               <button class="btn-primary main-form__submit-btn">Submit</button>
@@ -533,11 +536,12 @@
             </ul>
           </nav>
         </div>
+        <div class="map__map">
+          <img src="../img/map.jpg" alt="Map">
+        </div>
       </div>
       <!-- Map -->
-      <div class="map__map">
-        <img src="../img/map.jpg" alt="Map">
-      </div>
+
     </section>
 
   </main>
