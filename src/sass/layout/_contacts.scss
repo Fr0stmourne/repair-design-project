@@ -5,6 +5,10 @@
   align-content: center;
   justify-content: space-between;
 
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
   &__tel {
     display: flex;
     justify-content: center;

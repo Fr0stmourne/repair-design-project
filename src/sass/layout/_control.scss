@@ -1,6 +1,12 @@
 .control {
   background-image: linear-gradient(to bottom, $primary 0%, $primary 50%, $neutral 50%);
 
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    background-color: $primary;
+    color: $neutral;
+  }
+
   .container {
     box-sizing: border-box;
     max-width: $desktop-width;
@@ -21,5 +27,24 @@
     margin: 0 auto;
     padding: 0 25px;
     text-align: center;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      max-width: none;
+    }
+  }
+
+  &__video-block {
+    position: relative;
+    width: 100%;
+    max-width: 817px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
   }
 }

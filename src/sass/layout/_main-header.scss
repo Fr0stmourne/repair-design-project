@@ -9,6 +9,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 5.5%;
+
+    @media (max-width: $tablet-width) {
+      padding: 20px 6%;
+    }
   }
 
   &__title {
@@ -20,5 +24,18 @@
     font-family: 'FuturaDemiC', Arial, sans-serif;
     text-transform: uppercase;
     color: $secondary;
+  }
+
+  &__nav {
+    @media (max-width: $tablet-width) {
+      display: none;
+      padding: 23px 18px;
+    }
+  }
+
+  &__call-btn {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }

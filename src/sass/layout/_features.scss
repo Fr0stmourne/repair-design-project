@@ -4,8 +4,11 @@
   grid-template-rows: min-content;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  margin-bottom: 85px;
   color: $neutral;
+
+  @media (max-width: $tablet-width) {
+    order: 2;
+  }
 
   &__feature-name {
     display: inline-block;
