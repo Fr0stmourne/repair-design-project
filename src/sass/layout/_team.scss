@@ -1,7 +1,11 @@
 .team {
+
+  background-image: linear-gradient(to bottom, $primary 0%, $primary 55%, $neutral 55%);
+
   .container {
+
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 200px;
@@ -11,6 +15,8 @@
     text-align: center;
     margin: 0;
     margin-bottom: 40px;
+    color: $neutral;
+    text-transform: uppercase;
   }
 
   &__info {
@@ -18,6 +24,7 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
+    color: $neutral;
   }
 
   &__list {

@@ -11,10 +11,10 @@
     display: flex;
     width: 100%;
     max-width: 390px;
-    z-index: -1;
   }
 
   &__card {
+    position: relative;
     margin: 0 30px;
     margin-top: 80%;
     background-color: $neutral;

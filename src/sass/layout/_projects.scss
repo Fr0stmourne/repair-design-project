@@ -8,7 +8,7 @@
     grid-row-gap: 45px;
     justify-content: space-between;
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
     padding-top: 110px;
@@ -70,6 +70,7 @@
   }
 
   &__project-photo {
+    width: 80%;
     max-width: 680px;
 
     &:not(:last-child) {

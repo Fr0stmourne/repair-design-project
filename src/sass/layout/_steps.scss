@@ -8,7 +8,7 @@
     grid-template-rows: min-content, min-content;
     grid-column-gap: 10%;
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 5%;

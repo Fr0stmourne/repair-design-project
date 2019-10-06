@@ -4,7 +4,7 @@
     grid-template-columns: 3fr 2fr;
     grid-column-gap: 50px;
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 10% 0 0;

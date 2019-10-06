@@ -1,9 +1,10 @@
 .design-project {
 
+  background-image: linear-gradient(to bottom, $neutral 0%, $neutral 55%, $primary 55%);
 
   .container {
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 5%;
@@ -12,6 +13,8 @@
 
   &__title {
     text-align: center;
+    text-transform: uppercase;
+    color: $neutral;
   }
 
   &__info {
@@ -19,5 +22,6 @@
     margin-bottom: 40px;
     max-width: 50%;
     text-align: center;
+    color: $neutral;
   }
 }
