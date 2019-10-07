@@ -7,6 +7,7 @@
 
   @media (max-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $neutral 0%, $neutral 55%, $primary 55%);
+    margin-bottom: 0;
   }
 
   .container {
@@ -36,6 +37,11 @@
     font-size: 27px;
     line-height: 1.38;
     font-family: "Yeseva One", Arial, serif;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
   }
 
   &__list {
@@ -93,22 +99,34 @@
     width: 50%;
     max-width: 353px;
 
+    @media (max-width: $tablet-width) {
+      position: static;
+      width: 100%;
+      display: flex;
+      max-width: none;
+    }
+
     &:first-of-type {
       top: 400px;
       left: 0;
       transform: translate(0, -70%);
+
+      @media (max-width: $tablet-width) {
+        transform: none;
+      }
+
     }
 
     &:last-of-type {
       top: 400px;
       left: 0;
       transform: translate(calc(100% + 10%), -80%);
+
+      @media (max-width: $tablet-width) {
+        transform: none;
+      }
     }
 
-
-    @media (max-width: $tablet-width) {
-      display: flex;
-    }
   }
 
   &__btn {
@@ -125,6 +143,17 @@
       border: 0;
       border-radius: 50%;
       background-color: $secondary;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--left {
+        background-size: 12px;
+        background-image: url(../img/btn-arrow--left.svg);
+      }
+
+      &--right {
+        background-image: url(../img/btn-arrow--right.svg);
+      }
 
     }
 
