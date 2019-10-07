@@ -15,6 +15,7 @@
   }
 
   &__order {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,10 +28,143 @@
     background-size: cover;
     font-family: "FuturaMediumC", Arial, sans-serif;
     font-size: 18px;
+
+    @media (max-width: $laptop-width) {
+      padding-left: 20px;
+    }
+
   }
 
   &__move {
     padding-bottom: 80px;
+    width: 100%;
+    max-width: 364px;
+    position: absolute;
+
+    @media (max-width: $laptop-width) {
+      position: relative;
+      padding-left: 50px;
+      min-width: 300px;
+      left: 0;
+      top: 0;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (max-width: $laptop-width) {
+        display: none;
+      }
+
+    }
+
+    &--first {
+      left: 45%;
+      top: 60px;
+
+      &::before {
+        width: 300px;
+        height: 700px;
+        left: -95%;
+        top: -120px;
+        background-image: url(../img/circle1.png)
+      }
+
+    }
+
+    &--second {
+
+      left: 55%;
+      top: 170px;
+
+      &::before {
+        width: 200px;
+        height: 200px;
+        left: -43%;
+        top: -140px;
+        background-image: url(../img/circle2.png)
+      }
+    }
+
+    &--third {
+
+      left: 60%;
+      top: 330px;
+
+      &::before {
+        width: 200px;
+        height: 200px;
+        left: -40%;
+        top: -165px;
+        background-image: url(../img/circle3.png)
+      }
+    }
+
+    &--fourth {
+
+      left: 52%;
+      top: 480px;
+
+      &::before {
+        width: 200px;
+        height: 200px;
+        left: -30%;
+        top: -165px;
+        background-image: url(../img/circle4.png)
+      }
+
+      &::after {
+        width: 200px;
+        height: 200px;
+        left: -75%;
+        top: -85px;
+        background-image: url(../img/circle5.png)
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    left: -13%;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: $secondary;
+    text-transform: uppercase;
+    font-family: "Yeseva One", Arial, serif;
+    font-size: 18px;
+    color: $neutral;
+
+    .workflow__move--second & {
+      left: -13%;
+      top: -5px;
+    }
+
+    .workflow__move--third & {
+      left: -16%;
+      top: -10px;
+    }
+
+    .workflow__move--fourth & {
+      left: -20%;
+      top: -10px;
+    }
+
+    @media (max-width: $laptop-width) {
+      .workflow__move & {
+        left: 0;
+        top: 0;
+      }
+    }
+
   }
 
   &__request {
@@ -107,13 +241,18 @@
       background-color: $secondary;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url(../img/pig.svg)
+      background-image: url(../img/pig.svg);
     }
   }
 
   &__submit-btn {
     margin-left: auto;
     padding: 19px 22px;
+
+    @media (max-width: $laptop-width) {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
 }
