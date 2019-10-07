@@ -50,13 +50,7 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 60px;
-    }
-  }
-
-  &__agree~&__agree-label {
-
-    &:focus {
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+      align-self: start;
     }
   }
 
@@ -69,7 +63,16 @@
 
   & input {
     border: 0;
-    padding: 8px 10px;
+    padding: 8px 10px 8px 0;
+
+    @media (max-width: $tablet-width) {
+      background-color: $primary;
+
+      &::placeholder {
+        color: $neutral;
+      }
+    }
+
   }
 
   &__name-box {
