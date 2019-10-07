@@ -140,9 +140,12 @@
           <div class="request__phone-box"><label for="tel" class="request__label">Phone</label><input type="tel"
               class="request__name" placeholder="Your phone number:" id="tel"></div>
           <button class="btn btn--primary request__submit-btn">Submit</button>
-          <div class="request__agree-box"><input type="checkbox" name="agree" id="agree" class="request__agree"
-              required>
-            <label for="agree" class="request__agree-lbl">I agree to the processing of personal data</label></div>
+          <div class="request__agree-box">
+            <input type="checkbox" name="agree" id="agree" class="request__agree agree visually-hidden" required>
+            <label for="agree" class="request__agree-label agree__label">I agree to the processing of
+              personal
+              data</label>
+          </div>
         </form>
       </div>
     </section>
@@ -226,9 +229,11 @@
               class="workflow__input" placeholder="Your phone number:" id="tel"></div>
           <div class="workflow__input-box"><label for="email" class="workflow__label">Email</label><input type="text"
               class="workflow__input" placeholder="Your email:" id="tel"></div>
-          <div class="workflow__agree-box"><input type="checkbox" name="agree" id="agree-1" class="workflow__agree"
-              required>
-            <label for="agree-1" class="workflow__agree-lbl">I agree to the processing of personal data</label></div>
+          <div class="workflow__agree-box">
+            <input type="checkbox" name="agree" id="agree-1" class="workflow__agree agree visually-hidden" required>
+            <label for="agree-1" class="workflow__agree-label agree__label">I agree to the processing of personal
+              data</label>
+          </div>
           <button class="workflow__submit-btn btn btn--primary">Call the measurer</button>
         </form>
 
@@ -535,8 +540,10 @@
                 <input type="text" class="main-form__input" placeholder="I want to know:">
               </div>
               <div class="main-form__agree-box">
-                <input type="checkbox" name="agree" id="agree" class="main-form__agree-checkbox" required>
-                <label for="agree" class="main-form__agree">I agree to the processing of personal data</label>
+                <input type="checkbox" name="agree" id="agree2" class="main-form__agree-checkbox agree visually-hidden"
+                  required>
+                <label for="agree2" class="main-form__agree agree__label">I agree to the processing of personal
+                  data</label>
               </div>
               <button class="btn btn--primary main-form__submit-btn">Submit</button>
             </form>
