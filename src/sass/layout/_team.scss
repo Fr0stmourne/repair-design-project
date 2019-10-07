@@ -12,7 +12,11 @@
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5% 13%;
+    padding: 1.5% 170px;
+
+    @media (max-width: $tablet-width) {
+      padding: 1.5% 5%;
+    }
   }
 
   @include icon-lines(29px, 29px);
@@ -38,13 +42,13 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     grid-column-gap: 10%;
     grid-row-gap: 55px;
     margin-bottom: 65px;
 
     @media (max-width: $tablet-width) {
-      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
   }
