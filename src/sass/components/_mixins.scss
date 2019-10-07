@@ -1,0 +1,37 @@
+@mixin icon-lines($width, $height, $bottomOffset: 0px) {
+
+  &__title {
+    position: relative;
+    margin: 0 0 20px;
+    padding-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      left: calc(50% - 60px);
+      width: 32px;
+      height: 2px;
+      background-color: $secondary;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      left: calc(50% + 25px);
+      width: 32px;
+      height: 2px;
+      background-color: $secondary;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: $bottomOffset;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $width;
+    height: $width;
+  }
+}

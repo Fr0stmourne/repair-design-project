@@ -51,6 +51,10 @@
     color: $secondary;
     text-transform: uppercase;
 
+    @media (max-width: $tablet-width) {
+      padding-right: 0;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -59,6 +63,10 @@
       background-color: $secondary;
       bottom: 18px;
       right: 15px;
+
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
     }
 
     @media (max-width: $tablet-width) {
@@ -71,6 +79,7 @@
     font-size: 18px;
     font-family: 'FuturaBookC', Arial, sans-serif;
     color: $neutral;
+    line-height: 1.58;
 
     @media (max-width: $tablet-width) {
       text-align: center;

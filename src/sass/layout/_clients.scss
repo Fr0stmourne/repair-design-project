@@ -13,9 +13,10 @@
     padding: 1.5% 7%;
   }
 
+  @include icon-lines(34px, 28px, -5px);
+
   &__title {
     text-align: center;
-    margin-bottom: 40px;
     text-transform: uppercase;
     font-family: "Yeseva One", Arial, serif;
   }

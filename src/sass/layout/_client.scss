@@ -38,13 +38,36 @@
 
   }
 
-  &__square,
-  &__time {
+  &__feature {
+    position: relative;
     display: inline-block;
     padding: 10px 10px 10px 50px;
 
     &:not(:last-child) {
       border-right: 1px solid $neutral;
+
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--square::before {
+      width: 32px;
+      height: 31px;
+      background-image: url(../img/square.svg);
+    }
+
+    &--time::before {
+      width: 33px;
+      height: 31px;
+      background-image: url(../img/note.svg);
     }
   }
+
 }

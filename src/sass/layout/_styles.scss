@@ -16,6 +16,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 1.5% 5.5%;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 50px;
+    }
   }
 
   &__wrapper {
@@ -39,8 +43,8 @@
     font-family: "Yeseva One", Arial, serif;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 0;
-      margin-top: 0;
+      margin: 0 auto 20px;
+      text-align: center;
     }
   }
 
@@ -101,8 +105,8 @@
 
     @media (max-width: $tablet-width) {
       position: static;
-      width: 100%;
       display: flex;
+      width: 100%;
       max-width: none;
     }
 
@@ -177,6 +181,7 @@
 
     @media (max-width: $tablet-width) {
       display: none;
+      margin-bottom: 0;
 
       picture & {
         display: block;

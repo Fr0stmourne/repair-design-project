@@ -131,9 +131,26 @@
     }
 
     &-btn {
+      position: relative;
+      padding-right: 50px;
       color: $neutral;
       text-decoration: none;
       text-transform: uppercase;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10px;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        border: 2px solid $secondary;
+        background-color: transparent;
+        background-image: url(../img/arrow-down.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }
