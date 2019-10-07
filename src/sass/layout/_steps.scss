@@ -1,6 +1,8 @@
 .steps {
   background-color: $primary;
   color: $neutral;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 15px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -15,14 +17,23 @@
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5% 5%;
+    padding: 0 5% 1.5%;
 
+  }
+
+  &__title {
+    font-family: "FuturaDemiC", Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4;
   }
 
   &__heading {
     color: $secondary;
     text-transform: uppercase;
     margin-bottom: 90px;
+    font-family: "Yeseva One", Arial, serif;
+    font-size: 27px;
+    line-height: 1.4;
   }
 
   &__list {
@@ -37,19 +48,48 @@
   }
 
   &__step {
+
+    &-num {
+      font-family: "Yeseva One", Arial, serif;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
     &-img {
       width: 100%;
     }
 
     &-title {
+      max-width: 230px;
       text-transform: uppercase;
       color: $secondary;
+      font-family: "Yeseva One", Arial, serif;
+      font-size: 15px;
+      line-height: 1.5;
     }
+
+    &-info {
+      line-height: 1.7;
+    }
+
+    &-number {
+      align-self: flex-start;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      font-family: "Yeseva One", Arial, serif;
+      line-height: 1.38;
+      border-bottom: 1px solid $secondary;
+    }
+  }
+
+  &__controls {
+    margin-top: auto;
   }
 
   &__label {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
 
   &__wrapper {

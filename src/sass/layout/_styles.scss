@@ -1,9 +1,9 @@
 .styles {
+  margin-bottom: 50px;
   background-color: $primary;
   background-image: url(../img/styles.jpg);
   background-size: cover;
   color: $neutral;
-  min-height: 60%;
 
   @media (max-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $neutral 0%, $neutral 55%, $primary 55%);
@@ -19,7 +19,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 45% 50%;
+    grid-template-columns: minmax(300px, 35%) 1fr;
 
     @media (max-width: $tablet-width) {
       display: flex;
@@ -30,15 +30,22 @@
   &__title {
     max-width: 300px;
     margin-bottom: 50px;
+    margin-top: 110px;
     text-transform: uppercase;
     color: $secondary;
+    font-size: 27px;
+    line-height: 1.38;
+    font-family: "Yeseva One", Arial, serif;
   }
 
   &__list {
     display: flex;
-    min-height: 500px;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 70px;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    line-height: 1.7;
 
     @media (max-width: $tablet-width) {
       display: none;
@@ -47,12 +54,27 @@
   }
 
   &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
     &--active {
       color: $secondary;
+
+      .styles__label {
+        border-bottom: 1px solid $secondary;
+      }
     }
   }
 
+  &__label {
+    cursor: pointer;
+  }
+
   &__style-photos {
+    position: relative;
+    width: 100%;
     display: grid;
     align-content: center;
     grid-template-columns: 1fr 1fr;
@@ -67,6 +89,23 @@
   }
 
   &__photo-wrapper {
+    position: absolute;
+    width: 50%;
+    max-width: 353px;
+
+    &:first-of-type {
+      top: 400px;
+      left: 0;
+      transform: translate(0, -70%);
+    }
+
+    &:last-of-type {
+      top: 400px;
+      left: 0;
+      transform: translate(calc(100% + 10%), -80%);
+    }
+
+
     @media (max-width: $tablet-width) {
       display: flex;
     }
@@ -99,17 +138,13 @@
 
   }
 
-  &__style-photos {
-    position: relative;
-    width: 100%;
-  }
-
   & picture {
     width: 100%;
   }
 
   &__style-photo {
     width: 100%;
+    margin-bottom: 40px;
 
     @media (max-width: $tablet-width) {
       display: none;

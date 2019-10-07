@@ -1,7 +1,5 @@
 .types {
-  font-size: 15px;
-  line-height: 1.7;
-  font-family: 'FuturaBookC', Arial, sans-serif;
+
 
   .container {
     box-sizing: border-box;
@@ -24,8 +22,11 @@
   }
 
   &__list {
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'FuturaBookC', Arial, sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-column-gap: 30px;
     grid-row-gap: 50px;
     color: $primary;

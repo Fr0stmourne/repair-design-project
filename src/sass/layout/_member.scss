@@ -1,4 +1,5 @@
 .member {
+  font-family: "Yeseva One", Arial, serif;
   position: relative;
   margin-bottom: 50px;
 
@@ -41,14 +42,25 @@
 
   &__name {
     padding: 0 15px;
+    margin-bottom: 10;
+  }
+
+  &__position {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: "FuturaBookC", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.47;
   }
 
   &__experience {
     background-color: $secondary;
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin: 0;
     font-size: 13px;
     color: $neutral;
+    font-size: 13px;
+    line-height: 1.5;
     text-transform: uppercase;
   }
 }

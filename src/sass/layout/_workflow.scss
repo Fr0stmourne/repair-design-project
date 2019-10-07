@@ -11,7 +11,7 @@
     max-width: $desktop-width;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5% 10% 0 0;
+    padding: 1.5% 10% 15% 0;
   }
 
   &__order {
@@ -25,6 +25,8 @@
     list-style: none;
     background-image: url(../img/workflow.png);
     background-size: cover;
+    font-family: "FuturaMediumC", Arial, sans-serif;
+    font-size: 18px;
   }
 
   &__move {
@@ -37,13 +39,81 @@
     align-self: center;
     align-items: center;
     justify-content: space-around;
-    background-color: $primary;
     min-height: 80%;
+    padding: 0 10%;
+    background-color: $primary;
     color: $neutral;
+    font-size: 18px;
+    font-family: "FuturaMediumC", Arial, sans-serif;
+  }
+
+  &__form-title {
+    margin: 0 auto;
+    max-width: 290px;
+    font-family: "FuturaDemiC", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.22;
+    text-align: center;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__agree-box {
+    width: 100%;
+  }
+
+  &__input {
+    padding: 10px;
+    padding-left: 0;
+    border: 0;
+    border-bottom: 1px solid rgba($neutral, 0.15);
+    background-color: $primary;
+    color: $neutral;
+    line-height: 1.35;
+
+    &::placeholder {
+      color: $neutral;
+    }
+  }
+
+  &__label {
+    font-family: "FuturaBookC", Arial, sans-serif;
+    font-size: 15px;
+    color: rgba($neutral, 0.5);
   }
 
   &__note {
+    position: relative;
     grid-column: 2 / 3;
+    max-width: 220px;
+    padding-left: 130px;
+    color: $secondary;
+    font-family: "FuturaDemiC", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.22;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: -10px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: $secondary;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/pig.svg)
+    }
+  }
+
+  &__submit-btn {
+    margin-left: auto;
+    padding: 19px 22px;
   }
 
 }

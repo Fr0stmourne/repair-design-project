@@ -36,6 +36,10 @@
   &__label {
     font-size: 15px;
     color: rgba($light-primary, 0.5);
+
+    @media (max-width: $tablet-width) {
+      color: rgba($neutral, 0.5);
+    }
   }
 
   &__agree-box {

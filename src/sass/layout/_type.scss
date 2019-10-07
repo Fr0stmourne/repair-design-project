@@ -18,17 +18,17 @@
 
   &__advantages {
     position: relative;
+    padding-bottom: 30px;
 
     @media (max-width: $tablet-width) {
-      padding-bottom: 50px;
-
+      padding-bottom: 20px;
     }
   }
 
   &__card {
     position: relative;
     margin: 80% 30px 0;
-    padding: 30px 0 35px 35px;
+    padding: 30px 30px 35px 35px;
     background-color: $neutral;
     box-shadow: $card-shadow;
 
