@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -96,7 +96,7 @@
             <button class="slider__btn slider__btn--left"></button>
             <img src="img/projects1.jpg" alt="Project 1" class="projects__project-photo">
             <img src="img/projects2.jpg" alt="Project 2" class="projects__project-photo">
-            <img src="" alt="" class="projects__project-photo">
+            <img src="img/projects2.jpg" alt="" class="projects__project-photo">
             <button class="slider__btn slider__btn--right"></button>
           </div>
         </div>
@@ -122,8 +122,12 @@
           <img src="img/camera.svg" alt="" class="control__icon">
         </h2>
         <div class="control__video-block video">
-          <button class="video__play-btn"><span class="visually-hidden">Play</span></button>
-          <video src="" poster="img/poster.jpg" class="control__video video__video"></video>
+          <iframe id="iframe" class="video__iframe" width="1860" height="615"
+            src="https://www.youtube.com/embed/guIpSPY3KgM?enablejsapi=1&autoplay=1" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="video__play-btn" id="play-btn"><span class="visually-hidden">Play</span></button>
+          <video src="https://www.youtube.com/embed/guIpSPY3KgM" id="static-video" poster="img/poster.jpg"
+            class="control__video video__video"></video>
         </div>
         <p class="control__info">At each facility, a camera is installed that broadcasts the progress of work on the
           clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can
@@ -601,6 +605,7 @@
   </footer>
 
   <script defer src="js/map.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,25 @@
 .video {
-
+  position: relative;
 
   &__video {
     width: 100%;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-height: 434px;
+    z-index: -2;
+
+    &--show {
+      position: static;
+    }
   }
 
   &__play-btn {
@@ -18,8 +35,13 @@
     border-radius: 50%;
     border: 0;
     background-color: $secondary;
-    background-position: center;
+    background-size: 28px;
+    background-position: calc(50% + 3px);
     background-repeat: no-repeat;
     background-image: url(../img/play-btn.svg);
+
+    &--hide {
+      display: none;
+    }
   }
 }
