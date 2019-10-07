@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair Design</title>
   <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b9661d1c-1862-4b39-ba4b-afd055df4e6a&lang=ru_RU"
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -567,7 +569,8 @@
           </nav>
         </div>
         <div class="map__map">
-          <img src="../img/map.jpg" alt="Map">
+          <img src="../img/map.jpg" class="map__static-map" alt="Map">
+          <div class="map__interactive-map" id="map"></div>
         </div>
       </div>
       <!-- Map -->
@@ -596,6 +599,8 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="js/map.js"></script>
 </body>
 
 </html>

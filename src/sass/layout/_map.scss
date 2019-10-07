@@ -22,18 +22,34 @@
     }
   }
 
-  &__map {
-    margin: 0 auto;
-    width: 65%;
-    max-width: 925px;
+  &__interactive-map {
+    display: none;
+
+    &--show {
+      display: flex;
+      margin: 0 auto;
+      width: 65%;
+      max-width: 925px;
+      height: 450px;
+    }
 
     @media (max-width: $tablet-width) {
       width: 100%;
       max-width: none;
     }
+  }
 
-    img {
+
+  &__static-map {
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    max-width: 925px;
+
+    @media (max-width: $tablet-width) {
       width: 100%;
+      max-width: none;
     }
   }
 
