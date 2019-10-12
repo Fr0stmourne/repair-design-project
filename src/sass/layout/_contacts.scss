@@ -7,6 +7,10 @@
   font-family: 'FuturaDemiC', Arial, sans-serif;
   font-size: 14px;
 
+  @media (max-width: $laptop-width) {
+    grid-template-columns: 1fr;
+  }
+
   @media (max-width: $tablet-width) {
     display: block;
   }
@@ -22,7 +26,7 @@
   &__call-btn {
     font-size: 13px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $laptop-width) {
       display: none;
     }
   }
