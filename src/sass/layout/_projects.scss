@@ -87,14 +87,15 @@
   }
 
   &__list {
-    margin-right: 16%;
-    display: flex;
-    width: 50%;
-    max-width: 625px;
-    justify-content: space-between;
-    justify-self: end;
+    display: grid;
+    grid-template-columns: 35% 3% repeat(3, max-content);
     color: $neutral;
     text-transform: uppercase;
+
+    @media (max-width: $laptop-width) {
+      display: flex;
+      justify-content: center;
+    }
 
     @media (max-width: $tablet-width) {
       display: none;
@@ -104,6 +105,10 @@
   &__project {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:first-child {
+      grid-column: 3/4;
     }
   }
 
