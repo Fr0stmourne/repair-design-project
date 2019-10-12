@@ -95,15 +95,26 @@
 
   &__link {
     &--instagram {
+      position: relative;
       color: $secondary;
-      transform: rotate(180deg);
       writing-mode: vertical-lr;
-      padding: 0 38px;
+      margin: 0 38px;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 14px;
       font-family: "FuturaDemiC", Arial, sans-serif;
+
+      &::before {
+        content: "";
+        position: absolute;
+        transform: rotate(90deg);
+        left: -17px;
+        top: calc(50% + 80px);
+        width: 51px;
+        height: 2px;
+        background-color: $secondary;
+      }
 
       @media (max-width: $tablet-width) {
         display: none;

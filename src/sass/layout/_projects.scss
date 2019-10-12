@@ -92,7 +92,7 @@
     color: $neutral;
     text-transform: uppercase;
 
-    @media (max-width: $laptop-width) {
+    @media (max-width: $laptop-width) and (min-width: $tablet-width) {
       display: flex;
       justify-content: center;
     }
@@ -132,7 +132,8 @@
     margin-bottom: 85px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 0;
+      align-self: flex-start;
     }
   }
 
