@@ -63,7 +63,7 @@ gulp.task(`scripts`, () => {
 gulp.task(`copy`, gulp.series(`scripts`, `style`, () => {
   return gulp.src([
     `src/**/*.{html,ico}`,
-    `src/**/*.{woff,woff2}`,
+    `src/**/*.{ttf,eot,woff,woff2}`,
     `src/**/*.{jpg,svg,png,jpeg,gif}`
   ], {
 
