@@ -12,19 +12,13 @@
 
   &__item {
     display: flex;
-
+    margin-right: 15px;
+    margin-left: 15px;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
-    margin-left: 20px;
     text-transform: uppercase;
     font-family: 'FuturaBookC', Arial, sans-serif;
     font-size: 14px;
-
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-
   }
 
   &__link {

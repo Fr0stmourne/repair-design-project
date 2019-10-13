@@ -32,4 +32,10 @@
       padding: 23px 18px;
     }
   }
+
+  &__call-btn {
+    @media (max-width: $laptop-width) {
+      display: none;
+    }
+  }
 }

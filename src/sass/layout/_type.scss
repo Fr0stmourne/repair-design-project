@@ -16,6 +16,22 @@
     max-width: 390px;
   }
 
+  &__advantage {
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 7px;
+      height: 7px;
+      background-color: rgba(gray, 0.7);
+      border-radius: 50%;
+    }
+  }
+
   &__advantages {
     position: relative;
     padding-bottom: 30px;
