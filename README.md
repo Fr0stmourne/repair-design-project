@@ -1,4 +1,4 @@
-Project "Conquest" (adaptive layout, Grid Layout practice)
+Project "Repair Design" (adaptive layout)
 
 
 ## Build Setup
