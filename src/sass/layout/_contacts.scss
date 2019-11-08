@@ -21,6 +21,11 @@
     align-items: center;
     color: $secondary;
     min-width: 130px;
+    transition: 0.3s;
+
+    &:hover {
+      color: darken($secondary, 20%);
+    }
   }
 
   &__call-btn {

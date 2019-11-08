@@ -18,6 +18,11 @@
     background-color: $secondary;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: darken($secondary, 20%);
+    }
 
     &--email {
       background-image: url(../img/mail.svg);

@@ -76,10 +76,16 @@
         border-bottom: 1px solid $secondary;
       }
     }
+
+    &:not(&--active) .styles__label:hover {
+      color: darken($neutral, 20%);
+    }
   }
+
 
   &__label {
     cursor: pointer;
+    transition: 0.3s;
   }
 
   &__style-photos {

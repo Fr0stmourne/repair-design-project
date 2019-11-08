@@ -11,6 +11,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     margin-right: 15px;
     margin-left: 15px;
@@ -19,16 +20,38 @@
     text-transform: uppercase;
     font-family: 'FuturaBookC', Arial, sans-serif;
     font-size: 14px;
-  }
 
-  &__link {
-    text-decoration: none;
-    color: $neutral;
+    & .main-nav__link {
+      text-decoration: none;
+      color: $neutral;
+    }
 
-    &--active {
+    &--active .main-nav__link {
       color: $secondary;
     }
-  }
 
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      width: 0%;
+      height: 1px;
+      background-color: $neutral;
+      transition: width 0.3s ease;
+    }
+
+    &--active::before {
+      background-color: $secondary;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+
+
+  }
 
 }

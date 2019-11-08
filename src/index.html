@@ -17,7 +17,7 @@
       <h1 class="main-header__title">IC "Repair Design Project"</h1>
       <nav class="main-header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Home</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#" class="main-nav__link">Home</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Projects</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Measurement</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Team</a></li>
@@ -138,9 +138,9 @@
         <h2 class="request__title visually-hidden">Request form</h2>
         <form action="#" class="request__form">
           <div class="request__name-box"><label for="name" class="request__label">Name</label><input type="text"
-              class="request__name" placeholder="What is your name:" id="name"></div>
+              class="request__name" placeholder="What is your name:" id="name" pattern="^[a-zA-Z]+$"></div>
           <div class="request__phone-box"><label for="tel" class="request__label">Phone</label><input type="tel"
-              class="request__tel" placeholder="Your phone number:" id="tel"></div>
+              class="request__tel" placeholder="Your phone number:" id="tel" pattern="[0-9]{7,11}"></div>
           <button class="btn btn--primary request__submit-btn">Submit</button>
           <div class="request__agree-box">
             <input type="checkbox" name="agree" id="agree" class="request__agree agree visually-hidden" required>
@@ -227,11 +227,13 @@
           <h3 class="workflow__form-title">Leave a request for free
             departure of the measurer</h3>
           <div class="workflow__input-box"><label for="flow__name" class="workflow__label">Name</label><input
-              type="text" class="workflow__input" placeholder="What is your name:" id="flow__name"></div>
-          <div class="workflow__input-box"><label for="flow__tel" class="workflow__label">Phone</label><input
-              type="text" class="workflow__input" placeholder="Your phone number:" id="flow__tel"></div>
+              type="text" class="workflow__input" placeholder="What is your name:" id="flow__name"
+              pattern="^[a-zA-Z]+$"></div>
+          <div class="workflow__input-box"><label for="flow__tel" class="workflow__label">Phone</label><input type="tel"
+              class="workflow__input" placeholder="Your phone number:" id="flow__tel" pattern="[0-9]{7,11}">
+          </div>
           <div class="workflow__input-box"><label for="flow__email" class="workflow__label">Email</label><input
-              type="text" class="workflow__input" placeholder="Your email:" id="flow__email"></div>
+              type="email" class="workflow__input" placeholder="Your email:" id="flow__email"></div>
           <div class="workflow__agree-box">
             <input type="checkbox" name="agree" id="agree-1" class="workflow__agree agree visually-hidden" required>
             <label for="agree-1" class="workflow__agree-label agree__label">I agree to the processing of personal
@@ -541,11 +543,13 @@
               <div class="main-form__wrapper">
                 <div class="main-form__input-box">
                   <label for="main__name" class="main-form__label">Name</label>
-                  <input type="text" class="main-form__input" placeholder="What is your name:" id="main__name">
+                  <input type="text" class="main-form__input" placeholder="What is your name:" id="main__name"
+                    pattern="^[a-zA-Z]+$">
                 </div>
                 <div class="main-form__input-box">
                   <label for="main__tel" class="main-form__label">Phone</label>
-                  <input type="text" class="main-form__input" placeholder="Your phone number:" id="main__tel">
+                  <input type="tel" class="main-form__input" placeholder="Your phone number:" id="main__tel"
+                    pattern="[0-9]{7,11}">
                 </div>
               </div>
               <div class="main-form__input-box">

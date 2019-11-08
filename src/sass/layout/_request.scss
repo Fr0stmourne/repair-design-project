@@ -65,6 +65,10 @@
     border: 0;
     padding: 8px 10px 8px 0;
 
+    &::placeholder {
+      color: $primary;
+    }
+
     @media (max-width: $tablet-width) {
       background-color: $primary;
 

@@ -12,9 +12,18 @@
   color: $neutral;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.3s;
+
+  &--primary:hover {
+    background-color: darken($secondary, 20%);
+  }
 
   &--secondary {
     background-color: transparent;
     border: 1px $neutral solid;
+
+    &:hover {
+      background-color: $primary;
+    }
   }
 }
